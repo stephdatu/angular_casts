@@ -1,0 +1,2 @@
+class ScreencastsController < ApplicationController
+end
