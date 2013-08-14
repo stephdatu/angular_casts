@@ -1,5 +1,8 @@
 AngularCasts::Application.routes.draw do
-  resources :screencasts
+  scope :api do
+    get "/screencasts(.:format)" => "screencasts#index"
+    get "/screencasts/:id(.format)" => "screencasts#show"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -41,7 +44,7 @@ AngularCasts::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
