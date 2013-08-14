@@ -10,7 +10,7 @@ Based on the tutorial by Eric Berry:
 * [AngularJS on Rails 4 - Part 1](http://coderberry.me/blog/2013/04/22/angularjs-on-rails-4-part-1/)
 * [AngularJS on Rails 4 - Part 2](http://coderberry.me/blog/2013/04/23/angularjs-on-rails-4-part-2/)
 
-This application uses the gem [feedzirra](https://github.com/pauldix/feedzirra), which is dependent on the gem [curb](https://github.com/taf2/curb).
+This application uses the gem [feedzirra](https://github.com/pauldix/feedzirra), which is dependent on the gem [curb](https://github.com/taf2/curb). It also uses [Flow Player](http://flowplayer.org/) to display the video.
 
 ## Installation
 
@@ -21,6 +21,9 @@ rake db:setup
 rake test
 rake screencast_sync:railscasts
 ```
+
+### Screenshot
+![View of the homepage](lib/assets/angularcasts.png)
 
 ### Known Issues
 
